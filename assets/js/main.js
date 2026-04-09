@@ -32,19 +32,20 @@ if (nav) {
     }, { passive: true });
 }
 
-// Last-updated footer (index only) — only fetch if the element is present,
-// otherwise subpages 404 on the relative path.
+// Last-updated footer (index only) — pulls the latest commit date on `main`
+// from the GitHub API so we don't need a committed timestamp file or a bot
+// pushing to main (which the Ruleset blocks anyway).
 const updatedEl = document.getElementById('last-updated');
 if (updatedEl) {
-    fetch('assets/data/last-updated.json')
-      .then(r => r.json())
+    fetch('https://api.github.com/repos/KaladinDMP/QP-Megathread/commits/main')
+      .then(r => r.ok ? r.json() : null)
       .then(d => {
-        if (d.date) {
-          const formatted = new Date(d.date).toLocaleDateString('en-US', {
+        if (d && d.commit && d.commit.committer && d.commit.committer.date) {
+          const formatted = new Date(d.commit.committer.date).toLocaleDateString('en-US', {
             year: 'numeric', month: 'long', day: 'numeric'
           });
           updatedEl.textContent = 'Updated: ' + formatted;
         }
       })
-      .catch(() => {}); // fail silently if file missing
+      .catch(() => {}); // fail silently if offline or rate-limited
 }

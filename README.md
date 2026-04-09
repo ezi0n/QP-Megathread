@@ -113,7 +113,6 @@ QP-Megathread/
 ├── assets/
 │   ├── css/style.css       # Styles (locked)
 │   ├── js/main.js          # Scripts (locked)
-│   ├── data/               # Auto-updated timestamps (locked)
 │   └── images/             # Logos, screenshots, icons (OPEN to PRs)
 ├── pages/                  # ← YOU EDIT THESE
 │   ├── quest-standalone.html
@@ -123,8 +122,7 @@ QP-Megathread/
 │   ├── tools.html
 │   └── ideas.html
 └── .github/
-    ├── CODEOWNERS          # Who reviews what
-    └── workflows/          # Automation
+    └── CODEOWNERS          # Who reviews what
 ```
 
 ### Which page does my contribution go on?
