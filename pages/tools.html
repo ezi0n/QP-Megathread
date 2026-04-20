@@ -56,7 +56,7 @@
 
 <div class="placeholder" style="margin-top:20px;">
 
-    <!-- ================= STANDALONE ================= -->
+    <!-- ================= STANDALONE ================= -->  
 <div id="standalone" class="placeholder-box" style="margin-bottom:20px;">
     <div class="content-pill-wrap">
         <div class="content-pill">
@@ -69,60 +69,74 @@
                     browser-based loaders, and other useful utilities.
                 </p>
             </section>
-
+            <div class="badge-key">
+            <h4>Badge Key</h4>
+        
+            <p>
+                <span class="source-badge badge-windows">Windows Only</span>
+                Runs only on Windows.
+            </p>
+        
+            <p>
+                <span class="source-badge badge-multios">Multi-OS</span>
+                Works on multiple operating systems (Linux, Mac, Windows), though setup may vary.
+            </p>
+        </div>
             <section>
                 <h4>💻 PC Sideloaders</h4>
 
                 <p>
-                    These PC applications sideload Quest content to your headset.
+                    These Desktop applications sideload Quest content to your headset.
                     They do not include a built-in server — you must configure one separately.
                     For sideloader with servers, see <a href="https://qpmegathread.top/pages/quest-standalone.html" target="_blank" rel="noopener noreferrer">Quest Standalone Sources.</a>
                 </p>
 
                 <ul>
                     <li>
-                        <strong>Rookie (Official):</strong>
+                        <strong>Rookies (Official):</strong> <span class="source-badge badge-windows">Windows Only</span><br>
                         The original sideloading tool. Requires a server.
                         See the <a href="public-json.html">public JSON page</a> for setup.
-                        <a href="https://github.com/VRPirates/rookie/releases" target="_blank" rel="noopener noreferrer">Download</a>
+                        <a href="https://github.com/VRPirates/rookie/releases" target="_blank">Download</a>
                     </li>
-
+                
                     <li>
-                        <strong>ApprenticeVR (Best Fork):</strong>
-                        Improved fork of ApprenticeVR. Also requires a server.
-                        See the <a href="public-json.html">public JSON page</a>.
-                        <a href="https://github.com/mula-bb/apprenticeVrSrc" target="_blank" rel="noopener noreferrer">ApprenticeVR on GitHub</a>
+                        <strong>ApprenticeVR (Best Fork):</strong> <span class="source-badge badge-multios">Multi-OS</span><br>
+                        Improved fork of ApprenticeVR. Works on Linux, Mac, and Windows.
+                        Closest thing to full Rookie feature parity.
+                        <a href="https://github.com/kaladindmp/apprenticeVrSrc" target="_blank">GitHub</a>
                     </li>
-
+                
                     <li>
-                        <strong>QLoader:</strong>
+                        <strong>QLoader:</strong> <span class="source-badge badge-multios">Multi-OS</span><br>
                         Alternative sideloader. Requires manual server setup.
-                        <a href="https://github.com/skrimix/QLoaderFiles/releases" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="https://github.com/skrimix/QLoaderFiles/releases" target="_blank">GitHub</a>
                     </li>
-
+                
                     <li>
-                        <strong>LFI Sideloader:</strong>
-                        Alternative sideloader. Lightweight APK and OBB sideloader.
-                        <a href="https://github.com/LordSpectre/LFI-Sideload-Tool" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <strong>LFI Sideloader:</strong> <span class="source-badge badge-multios">Multi-OS</span><br>
+                        Lightweight APK/OBB sideloader built in Python.
+                        Should work anywhere Python runs.
+                        <a href="https://github.com/LordSpectre/LFI-Sideload-Tool" target="_blank">GitHub</a>
                     </li>
-
+                
                     <li>
-                        <strong>Quest File Transfer (QFT):</strong>
-                        Alternative sideloader for manual file transfer using a dual-pane file manager.
-                        <a href="https://github.com/extremelystiff/Oculus-Quest-File-Transfer-Tool" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <strong>Quest File Transfer (QFT):</strong> <span class="source-badge badge-multios">Multi-OS</span><br>
+                        Dual-pane file manager for manual transfer.
+                        Python-based.
+                        <a href="https://github.com/extremelystiff/Oculus-Quest-File-Transfer-Tool" target="_blank">GitHub</a>
                     </li>
                     
                     <li>
-                        <strong>QuestVault:</strong>
-                        QuestVault is a multi-platform AiO desktop Quest content manager for local library indexing, headset inventory, save backup workflows, ADB operations, and vrSrc-plugin remote catalog downloads.
-                        <a href="https://github.com/ezi0n/QuestVault" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <strong>QuestVault:</strong> <span class="source-badge badge-multios">Multi-OS</span><br>
+                        Multi-platform all-in-one Quest content manager.
+                        <a href="https://github.com/ezi0n/QuestVault" target="_blank">GitHub</a>
                     </li>
                 </ul>
 
                 <blockquote>
                     <p>
                         <strong>Note:</strong>
-                        Rookie and ApprenticeVR require a server configuration.
+                        Rookie, ApprenticeVRSrc, and QuestVault require a server configuration for the included gamelist function.
                         The easiest method is via the <a href="public-json.html">public JSON</a>.
                         For a full walkthrough, see
                         <a href="https://github.com/CrazyScamp/Rookie-3.1-Setup/" target="_blank" rel="noopener noreferrer">
@@ -177,7 +191,7 @@
 
                 <ul>
                     <li>
-                        <strong>APC (Automagic Package Changer):</strong>
+                        <strong>APC (Automagic Package Changer):</strong> <span class="source-badge badge-windows">Windows Only (For Now)</span><br>
                         A desktop utility that renames Quest APK package names for easier app management and conflict avoidance. It handles the package-changing process automatically with a simple drag-and-drop workflow.
                         <a href="https://github.com/KaladinDMP/AutomagicPackageChanger" target="_blank" rel="noopener noreferrer">GitHub</a>
                     </li>
@@ -201,8 +215,8 @@
                         <li>
                             <strong>ARMGDDN:</strong>
                             High-speed PC/PCVR content hub.
-                            <a href="https://www.armgddnbrowser.com/" target="_blank" rel="noopener noreferrer">Beta Website</a> |
-                            <a href="https://github.com/kaladindmp/agbrowser" target="_blank" rel="noopener noreferrer">ARMGDDN Browser</a>
+                            <a href="https://www.armgddnbrowser.com/" target="_blank" rel="noopener noreferrer">Beta Website</a> <span class="source-badge badge-multios">Multi-OS</span><br>
+                            <a href="https://github.com/kaladindmp/agbrowser" target="_blank" rel="noopener noreferrer">ARMGDDN Browser</a> <span class="source-badge badge-windows">Windows Only</span><br>
                         </li>
                     </ul>
 
