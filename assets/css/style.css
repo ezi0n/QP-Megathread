@@ -549,6 +549,91 @@ a { color: inherit; text-decoration: none; }
     letter-spacing: 0.1em;
     animation: badge-glow 2s ease-in-out infinite;
 }
+
+ .badge-key {
+    margin: 1.5rem 0 2rem;
+    padding: 1rem 1.25rem;
+    border-radius: 14px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.badge-key h3 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+.badge-key p {
+    margin: 0.75rem 0;
+}
+
+.source-badge {
+    display: inline-block;
+    margin-left: 0.5rem;
+    padding: 0.2rem 0.55rem;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.badge-desktop {
+    background: rgba(0, 153, 255, 0.16);
+    border: 1px solid rgba(0, 153, 255, 0.4);
+    color: #8fd0ff;
+}
+
+.badge-flexible {
+    background: rgba(0, 255, 163, 0.12);
+    border: 1px solid rgba(0, 255, 163, 0.35);
+    color: #86ffd2;
+}
+
+.badge-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0.75rem 0 0;
+}
+
+.badge-list li {
+    margin-bottom: 0.9rem;
+}
+
+.source-badge {
+    display: inline-block;
+    margin-left: 0.5rem;
+    padding: 0.2rem 0.55rem;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    vertical-align: middle;
+}
+
+/* NEW OS BADGES */
+.badge-windows {
+    background: rgba(0, 153, 255, 0.16);
+    border: 1px solid rgba(0, 153, 255, 0.4);
+    color: #8fd0ff;
+}
+
+.badge-multios {
+    background: rgba(0, 255, 163, 0.12);
+    border: 1px solid rgba(0, 255, 163, 0.35);
+    color: #86ffd2;
+}
+
+/* KEY BOX */
+.badge-key {
+    margin-bottom: 20px;
+    padding: 1rem;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
 @keyframes badge-glow {
     0%, 100% { box-shadow: 0 0 6px rgba(0,255,204,0.2); }
     50%       { box-shadow: 0 0 14px rgba(0,255,204,0.5), 0 0 24px rgba(0,255,204,0.15); }
